@@ -80,9 +80,9 @@ function Backdrop() {
     canvas.width = canvas.height = 512
     const ctx = canvas.getContext('2d')!
     const gradient = ctx.createRadialGradient(256, 200, 20, 256, 256, 330)
-    gradient.addColorStop(0, '#4a382c')
-    gradient.addColorStop(0.55, '#241a15')
-    gradient.addColorStop(1, '#0c0807')
+    gradient.addColorStop(0, '#6a1a44')
+    gradient.addColorStop(0.55, '#340f22')
+    gradient.addColorStop(1, '#12060d')
     ctx.fillStyle = gradient
     ctx.fillRect(0, 0, 512, 512)
     const map = new CanvasTexture(canvas)

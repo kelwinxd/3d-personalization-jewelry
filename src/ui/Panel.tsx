@@ -59,7 +59,16 @@ export function Panel() {
   return (
     <aside className="panel">
       <header className="panel-head">
-        <p className="eyebrow">Personalize</p>
+        <div className="brand">
+          <span className="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round">
+              <path d="M6 3h12l3 5-9 13L3 8z" />
+              <path d="M3 8h18M9 3 6 8l6 13 6-13-3-5M9 8l3 13 3-13" />
+            </svg>
+          </span>
+          <span className="brand-name">Personalize</span>
+        </div>
+        <p className="eyebrow">Ateliê 3D · Semijoias</p>
         <h1>Monte sua semijoia</h1>
         <div className="types" role="group" aria-label="Tipo de peça">
           {entries(pieceTypes).map(([id, t]) => (
